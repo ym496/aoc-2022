@@ -1,4 +1,4 @@
-fdescriptor = open('aoc_input/day.txt', 'r')
+fdescriptor = open('aoc_input/day1.txt', 'r')
 maxCalories = 0
 elf = []
 Elves = []
