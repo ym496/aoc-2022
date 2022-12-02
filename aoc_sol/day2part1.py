@@ -1,4 +1,4 @@
-fdescriptor = open('day2.txt', 'r')
+fdescriptor = open('aoc_input/day2.txt', 'r')
 totalScore = 0
 mapVar = {
   "X": "Rock",
