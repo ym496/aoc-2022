@@ -31,11 +31,9 @@ def move(n, stackFrom, stackTo):
 
 for i in StackofCrates:
   count += 1
-
   if count < 9:
     a = re.findall('\w', i)
     createStacks(a, i)
-
   if count > 10:
     a = re.findall('\d+', i)
     f, t = stacks[int(a[1])], stacks[int(a[2])]
