@@ -1,6 +1,6 @@
 import re
 
-StackofCrates = open('aoc_input/day5.txt', 'r')
+StacksofCrates = open('aoc_input/day5.txt', 'r')
 count = 0
 stacks = {}
 
@@ -29,7 +29,7 @@ def move(n, stackFrom, stackTo):
   return stackFrom, stackTo
 
 
-for i in StackofCrates:
+for i in StacksofCrates:
   count += 1
   if count < 9:
     a = re.findall('\w', i)
@@ -41,6 +41,8 @@ for i in StackofCrates:
 
 firstCrate = []
 for i in range(1, len(stacks.keys()) + 1):
-  firstCrate.append(stacks[i][-1])
-
+  try:
+    firstCrate.append(stacks[i][-1])
+  except:
+    continue
 message = ''.join(firstCrate)
